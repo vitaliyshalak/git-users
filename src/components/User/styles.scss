@@ -1,0 +1,94 @@
+@import 'src/assets/scss/variables';
+
+.user {
+  padding-top: $gutter-sm;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  height: 100%;
+
+  @media screen and #{$media-sm} {
+    padding-top: 0;
+    flex-direction: column;
+  }
+
+  &__loader {
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__error {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__profile {
+    border: $border-light-gray;
+    border-radius: 5px;
+    width: 30%;
+    overflow: hidden;
+    align-self: baseline;
+    background: $color-white;
+    position: relative;
+
+    @media screen and #{$media-sm} {
+      border-radius: 0;
+      border: 0;
+      width: 100%;
+      overflow: initial;
+      background: none;
+    }
+  }
+
+  &__profile-back {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: $gutter-xs;
+    top: $gutter-xs;
+    border: $border-light-gray;
+  }
+
+  &__profile-info {
+    padding: $gutter-sm $gutter-xs;
+
+    @media screen and #{$media-sm} {
+      padding: $gutter-sm;
+    }
+  }
+
+  &__profile-img {
+    width: 100%;
+    border-bottom: $border-light-gray;
+  }
+
+  &__profile-name {
+    font-weight: bold;
+  }
+
+  &__profile-bio {
+    margin-top: $gutter-sm;
+  }
+
+  &__repos {
+    width: 70%;
+
+    @media screen and #{$media-sm} {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  max-height: 100%;
+}
+
+body, input {
+  font-size: $font-size-lg;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: $color-mid-gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+textarea, input {
+  border: 0;
+  outline: none;
+  background: none;
+
+  &::placeholder {
+    color: $color-sami-gray;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  display: inline-block;
+  line-height: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#root {
+  height: inherit;
+}

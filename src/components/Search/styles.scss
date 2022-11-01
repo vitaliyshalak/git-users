@@ -1,0 +1,62 @@
+@import 'src/assets/scss/variables';
+
+.search {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: $gutter-sm;
+
+  @media screen and #{$media-sm} {
+    padding: $gutter-sm $gutter-sm 0;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: $border-light-gray;
+    border-radius: 5px;
+  }
+
+  &__form-icon, &__form-btn {
+    padding: $gutter-sm;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: $gutter-sm 0;
+    border-right: $border-light-gray;
+  }
+
+  &__form-btn {
+    font-weight: bold;
+  }
+
+  &__loader {
+    margin-top: $gutter-sm;
+  }
+
+  &__user-item {
+    display: flex;
+    padding: $gutter-sm $gutter-xs;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    border-bottom: $border-light-gray;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__users-list {
+    text-align: center;
+  }
+
+  &__user-item-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: $gutter-sm;
+  }
+}

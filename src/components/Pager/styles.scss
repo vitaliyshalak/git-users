@@ -1,0 +1,18 @@
+@import 'src/assets/scss/variables';
+
+.pager {
+  text-align: center;
+
+  &__item {
+    display: inline-block;
+    margin: 0 $gutter-xs $gutter-xs;
+    border: $border-light-gray;
+    border-radius: 5px;
+    padding: $gutter-xs $gutter-sm;
+    cursor: pointer;
+  }
+
+  &__item--selected {
+    background: $color-light-gray;
+  }
+}

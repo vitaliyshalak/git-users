@@ -1,0 +1,52 @@
+@import 'src/assets/scss/variables';
+
+.repos {
+  &__count {
+    font-weight: bold;
+    padding: 0 $gutter-sm;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__loader {
+    position: absolute;
+    right: $gutter-sm;
+  }
+
+  &__list {
+    padding: $gutter-sm;
+  }
+
+  &__list-item {
+    border: $border-light-gray;
+    border-radius: 5px;
+    padding: $gutter-xs;
+    margin-bottom: $gutter-xs;
+    background-color: $color-white;
+  }
+
+  &__list-item--loading {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: loading-animation;
+    animation-timing-function: linear;
+    background: linear-gradient(to right, $color-gray 8%, $color-mid-gray 18%, $color-gray 33%);
+    position: relative;
+  }
+
+  &__list-item-name {
+    margin-bottom: $gutter-xs;
+    font-weight: bold;
+  }
+
+  @keyframes loading-animation {
+    0% {
+      background-position: -800px 0
+    }
+    100% {
+      background-position: 800px 0
+    }
+  }
+}

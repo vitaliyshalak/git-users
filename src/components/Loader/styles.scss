@@ -1,0 +1,17 @@
+.loader {
+  width: 36px;
+  height: 36px;
+  animation: spin 4s linear infinite;
+
+  @-moz-keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    100% {
+      transform:rotate(360deg);
+    }
+  }
+}
